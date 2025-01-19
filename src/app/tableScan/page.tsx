@@ -31,7 +31,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className=''>
+    <div className='mt-20'>
         {scanResult
         ? <div className=""> Success: <a href={"http://"+scanResult}>{scanResult}</a></div>
         :  <div id="reader" className=""></div>

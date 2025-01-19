@@ -56,7 +56,7 @@ const SchedulePage = () => {
   }
 
   return (
-    <div className="p-4 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex items-center justify-center rounded">
+    <div className="p-4 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex items-center justify-center rounded mt-20">
       <div className="h-full shadow-2xl rounded-md flex flex-col md:flex-row md:h-[100%] md:w-full lg:w-[60%] 2xl:w-1/2">
         <div className="relative h-1/3 w-full md:h-full md:w-1/2 rounded">
           <Image 

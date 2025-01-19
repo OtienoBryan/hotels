@@ -14,7 +14,7 @@ import BottomNavigation from "@/components/BottomNavigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Urban Point Restaurant",
+  title: "Maa Hotel & Suites",
   description: "Restaurant",
 };
 

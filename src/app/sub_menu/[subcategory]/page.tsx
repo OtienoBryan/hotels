@@ -8,6 +8,7 @@ const getData =  async (category: string) => {
     cache: "no-store"
   })
 
+  
   if (!res.ok) {
     throw new Error("Failed!");
   }
@@ -24,7 +25,7 @@ const CategoryPage = async ({ params }: Props) => {
   const products: ProductType[] = await getData(sub_category);
   return (
 
-    <div className="p-4 lg:px-20 xl:px-40 h-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="p-4 lg:px-20 xl:px-40 h-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-20">
   {products.map((sub_category) => (
     <Link
       href={`/menu/${sub_category.slug}`}

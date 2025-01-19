@@ -39,7 +39,7 @@ const CartPage = () => {
   };
 
   return (
-    <div className="h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex flex-col lg:flex-row text-indigo-950">
+    <div className="h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex flex-col lg:flex-row text-indigo-950 mt-20">
       {/* PRODUCTS CONTAINER */}
       <div className="flex flex-col gap-4 p-4 lg:w-2/3 2xl:w-1/2">
         {products.map((item) => (

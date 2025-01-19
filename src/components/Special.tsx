@@ -6,15 +6,15 @@ import Image from 'next/image'
 
 const data = [
   {id:1,
-    title:"Welcome to Maa Hotel & Suites",
+    title:"Welcome to By the Garden",
     image:"/new.jpg",
   },
   {id:2,
-    title:"Welcome to CJ's delicious universe",
+    title:"Welcome to By the Garden",
     image:"/slide2.png",
   },
   {id:3,
-    title:"Welcome to CJ's delicious universe",
+    title:"Welcome to By the Garden",
     image:"/maa_front.jpg",
   },
 
@@ -31,7 +31,7 @@ const [currentSlide, setCurrentSlide] = useState(0)
   },[]);
 
   return (
-   <div className="flex flex-col h-[calc(60vh-6rem)] lg:h-[calc(80vh-6rem)] md:h-[calc(70vh-9rem)] lg:flex-row bg-fuchsia-50 mt-2">
+   <div className="flex flex-col h-[calc(60vh-6rem)] lg:h-[calc(80vh-6rem)] md:h-[calc(70vh-9rem)] lg:flex-row bg-fuchsia-50 mt-20">
   {/* IMAGE CONTAINER */}
   <div className="w-full flex-1 relative">
     <Image
@@ -43,7 +43,7 @@ const [currentSlide, setCurrentSlide] = useState(0)
   </div>
 
   {/* TEXT CONTAINER */}
-  <div className="lg:flex-1 flex items-center justify-center flex-col gap-2 text-red-500 font-bold ">
+  <div className="lg:flex-1 flex items-center justify-center flex-col gap-2 text-red-700 font-bold ">
     <h1 className="text-sm lg:text-4x1 text-center uppercase p-4 md:p-10 md:text-6xl xl:text-7xl">
       {data[currentSlide].title}
     </h1>

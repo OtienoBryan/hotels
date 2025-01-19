@@ -23,7 +23,7 @@ const CategoryPage = async ({ params }: Props) => {
 
   const products: ProductType[] = await getData(category);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 m-2 gap-4 text-indigo-950">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 m-2 gap-4 text-indigo-950 mt-20">
   {products.map((item) => (
     <Link
       href={`/product/${item.id}`}
